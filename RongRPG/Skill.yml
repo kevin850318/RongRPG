@@ -1,0 +1,14 @@
+Skill:
+  SKILL_001:
+    SkillName: '火陣'
+    Item:
+        ==: org.bukkit.inventory.ItemStack
+        type: ENCHANTED_BOOK
+        amount: 1
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '§f技能書 火陣'
+          lore:
+          - §0[SKILL_001]
+          - §f技能§f 火陣

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/Kevin/Desktop/SupportPlugin/MythicMobs-2.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Kevin/Desktop/SupportPlugin/HolographicDisplays.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Kevin/Desktop/SupportPlugin/ProtocolLib_1.10.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Kevin/Desktop/SupportPlugin/spigot-1.10.2-R0.1-SNAPSHOT-latest.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Kevin/Desktop/SupportPlugin/MythicLib.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Kevin/Desktop/SupportPlugin/MagicSpells-3.5-dev-1603090833.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Kevin/Desktop/1.10.2/plugins/Citizens.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

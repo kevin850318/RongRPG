@@ -1,0 +1,59 @@
+ItemList:
+  Test001:
+    ItemType: EQUIPMENT
+    Material: IRON_SWORD
+    Data: 0
+    Amount: 1
+    DisplayName: "§f測試武器"
+    Lore:
+    - "§0[Test001]"
+    - "§f類別§f 武器"
+    - "§f▼基本數值▼"
+    - "§f物理攻擊§f +10"
+    - "§f魔法攻擊§f +10"
+    - "§f▼裝備限制▼"
+    - "§f力量§f 5"
+    - "§f敏捷§f 10"
+    - "§f○未鑑定"
+    Coin: 1
+  Test002:
+    ItemType: EQUIPMENT
+    Material: IRON_HELMET
+    Data: 0
+    Amount: 1
+    DisplayName: "§f測試頭盔"
+    Lore:
+    - "§0[Test002]"
+    - "§f類別§f 頭部"
+    - "§f▼基本數值▼"
+    - "§f物理防禦§f +10"
+    - "§f魔法防禦§f +10"
+    - "§f▼裝備限制▼"
+    - "§f體質§f 5"
+    - "§f智慧§f 10"
+    - "§f○未鑑定"
+    Coin: 1
+  Test003:
+    ItemType: SCROLL
+    ScrollType: IDENTIFY
+    IdentifyAmount: 3
+    Material: PAPER
+    Data: 0
+    Amount: 1
+    DisplayName: "§f測試鑑定卷軸"
+    Lore:
+    - "§0[Test003]"
+    - "§f類別§f 鑑定"
+    - "§f鑑定數: 3"
+    Coin: 1
+  Test004:
+    ItemType: ITEM
+    Material: STONE
+    Data: 0
+    Amount: 1
+    DisplayName: "§f測試物品"
+    Lore:
+    - "§0[Test004]"
+    - "§f類別§f 物品"
+    - "§f售價: 100"
+    Coin: 100

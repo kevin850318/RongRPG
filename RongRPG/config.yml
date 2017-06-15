@@ -1,0 +1,167 @@
+PlayerInformation:
+  ArmourUIIcon:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "§f裝備欄"
+        lore:
+        - "§f點擊進入裝備欄頁面"
+      Command: "rrpg armourui"
+  AttributeUIIcon:
+      ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "§f屬性資訊"
+        lore:
+        - "§f點擊進入屬性頁面"
+      Command: "rrpg att ui"
+  FriendUIIcon:
+      Command: "rrpg att ui"
+  TeamUIIcon:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "§f隊伍資訊"
+        lore:
+        - "§f點擊進入隊伍頁面"
+      Command: ""
+  GuildUIIcon:
+      ==: org.bukkit.inventory.ItemStack
+      type: BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "§f公會資訊"
+        lore:
+        - "§f點擊進入公會頁面"
+      Command: ""
+ArmourUI:
+  HelmetIcon:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "§f頭盔圖示"
+        lore:
+        - "§f請將頭盔類別裝備放置下方欄位"
+        - "§c無法移動"
+  CheatplateIcon:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "§f盔甲圖示"
+        lore:
+        - "§f請將盔甲類別裝備放置下方欄位"
+        - "§c無法移動"
+  GlovesIcon:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_BARDING
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "§f護手圖示"
+        lore:
+        - "§f請將護手類別裝備放置下方欄位"
+        - "§c無法移動"
+  LeggingsIcon:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "§f護腿圖示"
+        lore:
+        - "§f請將護腿類別裝備放置下方欄位"
+        - "§c無法移動"
+  BootsIcon:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "§f靴子圖示"
+        lore:
+        - "§f請將靴子類別裝備放置下方欄位"
+        - "§c無法移動"
+  WingIcon:
+      ==: org.bukkit.inventory.ItemStack
+      type: WATER_LILY
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "§f翅膀圖示"
+        lore:
+        - "§f請將翅膀類別裝備放置下方欄位"
+        - "§c無法移動"
+  EarringIcon:
+      ==: org.bukkit.inventory.ItemStack
+      type: NAME_TAG
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "§f耳環圖示"
+        lore:
+        - "§f請將耳環類別裝備放置下方欄位"
+        - "§c無法移動"
+  NecklaceIcon:
+      ==: org.bukkit.inventory.ItemStack
+      type: LEASH
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "§f項鍊圖示"
+        lore:
+        - "§f請將項鍊類別裝備放置下方欄位"
+        - "§c無法移動"
+  RingIcon:
+      ==: org.bukkit.inventory.ItemStack
+      type: STONE_BUTTON
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "§f戒指圖示"
+        lore:
+        - "§f請將戒指類別裝備放置下方欄位"
+        - "§c無法移動"
+  WeaponIcon:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "§f武器圖示"
+        lore:
+        - "§f請將武器類別裝備放置下方欄位"
+        - "§c無法移動"
+  HotbarIcon:
+      ==: org.bukkit.inventory.ItemStack
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "§f技能圖示"
+        lore:
+        - "§f請將技能類別裝備放置下方欄位"
+        - "§c無法移動"
+PlayerChat:
+  Radius: 30
+Armour:
+  Lore:
+    Health: "§c生命§f: "
+    Mana: "§9魔力§f: "
+    PhysicalAttack: "§6物理攻擊§f: "
+    MagicAttack: "§9魔法攻擊§f: "
+    PhysicalDefense: "§6物理防禦§f: "
+    MagicDefense: "§9魔法防禦§f: "
+Effect:
+  LevelUp: "cast EffectLevelUp"
+ExpAddition: 1

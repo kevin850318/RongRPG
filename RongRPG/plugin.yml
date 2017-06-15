@@ -1,0 +1,13 @@
+name: RongRPG
+main: rong.RongRPG.RongRpg
+version: 1.0
+depend: [ProtocolLib]
+commands:
+    rrpg:
+        description: by Rong.
+    friend:
+        description: by Rong.
+    merchant:
+        description: by Rong.
+    teleportpoint:
+        description: by Rong.

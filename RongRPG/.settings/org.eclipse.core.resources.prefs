@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+encoding//src/rong/RongFriend/Command/FriendCommand.java=UTF-8
+encoding//src/rong/RongRPG/Command/Cmd.java=UTF-8
+encoding//src/rong/RongRPG/Command/MerchantCommand.java=UTF-8
+encoding//src/rong/RongRPG/Command/TeleportPointCommand.java=UTF-8
+encoding//src/rong/RongRPG/Data/AnvilData.java=UTF-8
+encoding//src/rong/RongRPG/Data/PlayerData.java=UTF-8
+encoding//src/rong/RongRPG/Listener/EntityAttack.java=UTF-8
+encoding//src/rong/RongRPG/Listener/InventoryClick.java=UTF-8
+encoding//src/rong/RongRPG/Listener/MythicMobsDeath.java=UTF-8
+encoding//src/rong/RongRPG/Listener/PlayerAttack.java=UTF-8
+encoding//src/rong/RongRPG/Listener/PlayerChat.java=UTF-8
+encoding//src/rong/RongRPG/Listener/SkillDamage.java=UTF-8
+encoding//src/rong/RongRPG/RongRpg.java=UTF-8
+encoding//src/rong/RongRPG/Util/InventoryUtil.java=UTF-8
