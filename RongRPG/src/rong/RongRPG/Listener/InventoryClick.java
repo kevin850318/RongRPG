@@ -352,7 +352,7 @@ public class InventoryClick implements Listener
 				return;
 			}
 			
-			ItemStack is = event.getCurrentItem();
+			ItemStack is = event.getCurrentItem().clone();
 			CustomItem ci = CustomItem.getCustomItem(is);
 			int slot = event.getSlot();
 			
@@ -377,14 +377,25 @@ public class InventoryClick implements Listener
 					else if(ci.getItemType() == ItemType.GEM)
 					{
 						GemItem gi = (GemItem) RpgStorage.CustomItemMap.get(ci.getItemID());
+						ItemStack tempItem = is.clone();
 						
 						if(ad.getMixItem() != null)
 						{
 							player.getInventory().addItem(ad.getAnvilInventoryItem(4));
 						}
 						
-						ad.setAnvilInventoryItem(4, is);
-						event.setCurrentItem(null);
+						if(is.getAmount() >= 1)
+						{
+							tempItem.setAmount(1);
+							is.setAmount(is.getAmount() - 1);
+							
+							if(is.getAmount() <= 0)
+							{
+								is = null;
+							}
+						}
+						ad.setAnvilInventoryItem(4, tempItem);
+						event.setCurrentItem(is);
 						ad.setMixItem(gi);
 					}
 				}

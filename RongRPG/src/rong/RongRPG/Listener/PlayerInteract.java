@@ -15,7 +15,7 @@ import com.nisovin.magicspells.Spell;
 
 import rong.RongRPG.RpgStorage;
 import rong.RongRPG.Data.CustomItem;
-import rong.RongRPG.Data.CustomItem.ItemType;
+import rong.RongRPG.Data.LotteryData;
 import rong.RongRPG.Data.PlayerData;
 import rong.RongRPG.Data.SkillData;
 import rong.RongRPG.Data.SkillPlayerData;
@@ -34,6 +34,22 @@ public class PlayerInteract implements Listener
 		
 		if(is != null)
 		{
+			if(is.getType() == Material.CHEST)
+			{
+				if(event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK)
+				{
+					CustomItem ci = CustomItem.getCustomItem(is);
+
+					if(ci != null)
+					{
+						LotteryData ld = RpgStorage.LotteryMap.get(ci.getItemID());
+						
+						player.getInventory().addItem(ld.getWinItem());
+						return;
+					}
+				}
+			}
+			
 			if(RpgUtil.isRpgItem(event.getItem()) && event.getItem().getItemMeta().getDisplayName().contains("技能圖示"))
 			{
 				PlayerInventory inv = player.getInventory();
@@ -59,29 +75,26 @@ public class PlayerInteract implements Listener
 					
 					if(ci != null)
 					{
-						if(ci.getItemType() == ItemType.SKILL_BOOK)
+						SkillData sData = RpgStorage.SkillDataMap.get(ci.getItemID());
+						
+						if(sData != null)
 						{
-							SkillData sData = RpgStorage.SkillDataMap.get(ci.getItemID());
+							SkillPlayerData spData = pData.getSkillPlayerData();
 							
-							if(sData != null)
+							if(!spData.getSkillList().contains(sData))
 							{
-								SkillPlayerData spData = pData.getSkillPlayerData();
-								
-								if(!spData.getSkillList().contains(sData))
-								{
-									spData.getSkillList().add(sData);
-									player.getInventory().setItemInMainHand(null);
-									player.sendMessage(RpgStorage.SystemTitle + "§f習得§f " + sData.getSkillName());
-									return;
-								}
-								
-								player.sendMessage(RpgStorage.SystemTitle + sData.getSkillName() + " §c已學習");
+								spData.getSkillList().add(sData);
+								player.getInventory().setItemInMainHand(null);
+								player.sendMessage(RpgStorage.SystemTitle + "§f習得§f " + sData.getSkillName());
 								return;
 							}
 							
-							player.sendMessage(RpgStorage.SystemTitle + "§c無此技能, 請通知管理員");
+							player.sendMessage(RpgStorage.SystemTitle + sData.getSkillName() + " §c已學習");
 							return;
 						}
+						
+						player.sendMessage(RpgStorage.SystemTitle + "§c無此技能, 請通知管理員");
+						return;
 					}
 				}
 			}

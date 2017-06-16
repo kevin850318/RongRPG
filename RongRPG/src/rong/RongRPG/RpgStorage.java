@@ -6,7 +6,6 @@ import java.util.Random;
 import org.bukkit.Location;
 
 import net.elseland.xikage.MythicMobs.MythicMobs;
-import net.elseland.xikage.MythicMobs.Mobs.ActiveMob;
 
 import com.comphenix.protocol.ProtocolManager;
 import com.nisovin.magicspells.MagicSpells;
@@ -14,7 +13,7 @@ import com.nisovin.magicspells.MagicSpells;
 import rong.RongRPG.ConfigLoad.Config;
 import rong.RongRPG.Data.AnvilData;
 import rong.RongRPG.Data.CustomItem;
-import rong.RongRPG.Data.DropData;
+import rong.RongRPG.Data.LotteryData;
 import rong.RongRPG.Data.MobSpawnerData;
 import rong.RongRPG.Data.PlayerData;
 import rong.RongRPG.Data.SkillData;
@@ -40,7 +39,7 @@ public class RpgStorage
 	public static HashMap<Integer, MerchantData> NPCMerchantMap = new HashMap<>();
 	public static HashMap<String, TeleportData> TeleporDatatMap = new HashMap<>();
 	public static HashMap<Integer, MobSpawnerData> MobSpawnerMap = new HashMap<>();
-	public static HashMap<ActiveMob, DropData> DropMap = new HashMap<>();
+	public static HashMap<String, LotteryData> LotteryMap = new HashMap<>();
 	public static Random random = new Random();
 	public static Location SpawnerCenterLocation;
 	public static float ExpAddition = 1;
